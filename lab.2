@@ -1,0 +1,65 @@
+import sys as system
+
+#zad1
+
+sport=['piłka_nożna'  ' mma', 'skoki_narciarskie', 'piłka_ręczna']
+sport.reverse()
+print(sport)
+sport.append('łyżwiarstwo')
+sport.append('golf')
+sport.append('szachy')
+print(sport)
+
+#zad2
+slownik={'min':'minimalny' , 'np':'na_przykład', 'płd':'południe'}
+print(slownik)
+
+#zad3
+gry={'lol':'League_of_Legends','wot':'world_of_tanks','tff':'team_fight_tactics'}
+print(len(gry))
+
+#zad4
+# licznik=0
+# zdanie = input("Podaj zdanie: ")
+# print(zdanie.count("a"))
+
+#zad5
+a = system.stdin.readline()
+b = system.stdin.readline()
+c = system.stdin.readline()
+wynik = int(a) ** int(b) + int(c)
+system.stdout.write(str(wynik))
+
+#Zadanie 6
+a = int(input("Wczytaj pierwsza liczbe: "))
+b = int(input("Wczytaj druga liczbe: "))
+c = int(input("Wczytaj trzecia liczbe: "))
+
+if a>b & a>c:
+    print(a ,"Jest najwieksze")
+elif b>a & b>c:
+    print(b, "jest najwieksze")
+else:
+    print(c, "jest najwieksze")
+#zadanie 7
+lista = [3.5, 4, 8.2, 5.6, 9]
+for i in lista:
+    print(i ** 2, "\n")
+
+#zadanie 8
+lista = []
+licznik = 1
+while len(lista) < 10:
+    if licznik % 2 == 0:
+        lista.append(licznik)
+    licznik += 1
+print(lista)
+
+#Zadanie 9
+import math
+
+a = float(input("Podaj liczbe: "))
+try:
+    print(math.sqrt(a))
+except ValueError:
+    print("nie mozna spierwiastkowac liczby ujemnej w pierwiastku 2 stopnia")
