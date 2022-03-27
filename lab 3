@@ -1,0 +1,52 @@
+import random
+#lab 3
+#zad 1
+
+a=[1-x for x in range(11)]
+print(a)
+b=[4**z for z in range(8)]
+print(b)
+c=[x for x in b if x%2==0 ]
+print(c)
+
+#zad 2
+
+lista1=[]
+for x in range(11):
+    lista1.append(random.randint(0,100))
+lista2=[x for x in lista1 if x%2==0]
+print(lista2)
+
+#zad 3
+
+produkty={'Szynka':'gram',
+          'mleko':'mililitry',
+          'batony':'szt'}
+nowa = [key for key, value in produkty.items() if value == 'szt']
+print(nowa)
+#zad 4
+
+def prostokatny (a,b,c):
+    if (c**2==b**2+a**2):
+        print('trojakt jest prostokatny')
+    else:
+        print('trojkat nie jest prostokatny')
+
+print(prostokatny(3,4,5))
+
+#zad 5
+
+def trapez (a=4,b=8,h=2):
+    return ((a+b)/2)*h
+print(trapez())
+
+#zad 6
+
+def iloczyn (a=1,b=4,c=10):
+    for x in range (0,c):
+        a=a*b
+    return a
+
+print(iloczyn())
+
+#zad 7
